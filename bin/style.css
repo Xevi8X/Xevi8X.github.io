@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'lazy-spring';
+    src: URL('lazy-spring.ttf') format('truetype');
+  }
+
+body {
+    background-color: #eeffee;
+}
+
+p {
+    color: #5b5b5b;
+    font-family: 'lazy-spring';
+}
+
+p::selection {
+    background: #5fb832;
+}
+
+header{
+    text-align: center;
+}
+
+.container--minor {
+    padding: 1em 1em 1em 1em;
+	word-wrap: break-word;   
+}
+
+.vertical-center {
+    margin: 0;
+    position:relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+.gallery-organizer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+}
+
+.gallery-item {
+    vertical-align: middle;
+}
+
+.gallery-item img {
+    max-width: 320px;
+    width: 100%;
+}
+
+
+@media (max-width: 640px) {
+    .gallery-item img {
+        max-width: 100%;
+    }
+}
+
